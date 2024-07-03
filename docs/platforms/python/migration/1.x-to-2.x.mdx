@@ -67,7 +67,7 @@ The old APIs will continue to work in 2.0, but we recommend migrating to their n
 
 ### Activating a Custom Hub
 
-If you are using a custom hub to isolate event data, you can instead use a custom isolation scope. To activate the custom isolation scope, you will need to explicitly pass the isolation scope to the `use_isolation_scope`, which creates a context manager that activates the scope. Here is an example of how to change your code to make it work:
+If you were using a custom hub to isolate event data, we recommend using a custom isolation scope instead. To activate the custom isolation scope, you will need to explicitly pass the isolation scope to the `use_isolation_scope`, which creates a context manager that activates the scope. Here is an example of how to change your code to make it work:
 
 ```python diff
   import sentry_sdk
